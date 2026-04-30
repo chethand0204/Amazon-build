@@ -1,2 +1,12 @@
-// Added feature 1
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build triggered from GitHub webhook!'
+            }
+        }
+    }
+}// Added feature 1
 // new feature 1
